@@ -1,36 +1,40 @@
 # RabbitMQ Event-Driven Learning Project 🐰🚀
 
-Welcome to our RabbitMQ Event-Driven Learning Project This repository is designed to help you explore and gain hands-on experience with event-driven architectures using RabbitMQ. Dive into the world of message publishing, consumption, routing, and much more.
+Welcome to my personal RabbitMQ Event-Driven Learning Project This repository is dedicated to my journey of exploring and gaining hands-on experience with event-driven architectures using RabbitMQ.
 
 ## Overview
 
-Our project aims to demystify the complexities of event-driven systems, particularly focusing on asynchronous communication between services facilitated by RabbitMQ. Whether you're new to messaging, queues, or seeking to enhance your understanding of system integration, this project is tailored to meet your learning objectives.
+My project aims to deepen my understanding of event-driven systems, especially focusing on asynchronous communication between services facilitated by RabbitMQ. As I navigate through messaging, queues, and system integration, this project is tailored to support my learning objectives.
 
 ## What's Inside?
 
 ### Practical Examples
 
-Embark on a journey of discovery with our practical examples. These examples guide you through setting up and utilizing RabbitMQ for sending and receiving messages, providing a solid foundation for your learning journey.
+Join me on this learning journey with practical examples. These examples guide me through setting up and utilizing RabbitMQ for sending and receiving messages, laying down a solid foundation for my learning path.
 
 ### Comprehensive Documentation
 
-Each example is accompanied by detailed documentation. Learn about the purpose of the code, how to execute it, and what outcomes to anticipate. Our goal is to equip you with the knowledge and skills needed to navigate the world of RabbitMQ effectively.
+Each example comes with detailed documentation. I'm learning about the purpose of the code, how to execute it, and what outcomes to anticipate. My goal is to equip myself with the knowledge and skills needed to navigate the world of RabbitMQ effectively.
 
 ## Quick Start Guide
 
-Ensure you have RabbitMQ installed on your machine. Follow these steps to get started:
+Make sure you have RabbitMQ installed on your machine. Follow these steps to get started:
 
 ### Set Up RabbitMQ
 
-Utilize Docker Compose to spin up a RabbitMQ server container effortlessly.
+Use Docker Compose to easily spin up a RabbitMQ server container.
 
 ```shell
 cd rabbitmq && docker compose up -d
 ```
 
 ### Deploying the Deposit Server
+1. **Open deposit service folder**
+   ```shell
+   cd deposit-service
+   ```
 
-1. **Install Dependencies**
+2. **Install Dependencies**
 
    Choose your package manager:
    
@@ -48,7 +52,7 @@ cd rabbitmq && docker compose up -d
    pnpm install
    ```
 
-2. **Start the Deposit Service Server**
+3. **Start the Deposit Service Server**
 
    ```shell
    npm run dev
@@ -65,12 +69,16 @@ cd rabbitmq && docker compose up -d
    ```
 
 ### Running the Deposit Consumer Example
+1. **Open consumers example folder**
+   ```shell
+   cd consumers
+   ```
 
-1. **Install Dependencies**
+2. **Install Dependencies**
 
    Similar to deploying the server, choose your preferred package manager.
 
-2. **Execute the Consumer**
+3. **Execute the Consumer**
 
    Listen to deposit events with the following command:
 
@@ -90,7 +98,7 @@ cd rabbitmq && docker compose up -d
 
 ### Triggering a Deposit Event
 
-Engage with the deposit service via an HTTP POST request. Use tools like Postman or Insomnia to send a deposit request to the `/deposit` endpoint:
+Interact with the deposit service via an HTTP POST request. Use tools like Postman or Insomnia to send a deposit request to the `/deposit` endpoint:
 
 ```json
 POST /deposit
@@ -101,4 +109,5 @@ POST /deposit
 ```
 
 Monitor the logs of the deposit consumer server to observe the processing of your deposit event.
+
 ![Exemplo consumidor](consumer-example.png)
