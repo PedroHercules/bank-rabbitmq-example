@@ -1,0 +1,20 @@
+{
+  "name": "consumers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev:consumer:deposit": "tsx deposit-consumer-example.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/amqplib": "^0.10.5",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  }
+}
